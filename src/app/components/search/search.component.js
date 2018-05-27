@@ -1,6 +1,6 @@
 var search = {
   templateUrl: './search.html',
-  controller: 'searchController'
+  controller: 'SearchController'
 };
 
 angular
