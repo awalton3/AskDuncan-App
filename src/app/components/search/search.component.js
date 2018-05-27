@@ -9,12 +9,13 @@ angular
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('search', {
-        url: '/search',
+        parent: 'app',
+        url: 'search',
         component: 'search'
       });
       // .state('auth.login', {
       //   url: '/login',
       //   component: 'login'
       // });
-    $urlRouterProvider.otherwise('/search');
+    $urlRouterProvider.otherwise('search');
   });
