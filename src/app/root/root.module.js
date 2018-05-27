@@ -1,5 +1,3 @@
-
-
 angular
   .module('root', [
     'common',

@@ -1,4 +1,4 @@
-function SearchController() {
+function SearchController(SearchService) {
 
   var ctrl = this;
 
@@ -11,10 +11,10 @@ function SearchController() {
   // };
 
   ctrl.submitKeyword = function () {
-    console.log(ctrl.searchInput);
-    //   .navParse(ctrl.searchInput)
-    //SearchService(ctrl.searchInput);
-  };
+    console.log(ctrl.searchInput)
+    return SearchService
+      .navParse(ctrl.searchInput)
+  }
 
   // ctrl.search = function (ctrl.searchInput) {
   //   return SearchService;
