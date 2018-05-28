@@ -28,6 +28,7 @@ function SearchService(Parse) {
       //searchResult made accessible to the view
       ctrl.searchResult = result;
       console.log(ctrl.searchResult);
+      return ctrl.searchResult
     })
   }
 };

@@ -9,8 +9,8 @@ angular
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('searchResults', {
-        parent: 'app',
-        url: 'search-results',
+        parent: 'search',
+        url: '/results',
         component: 'searchResults'
       });
    $urlRouterProvider.otherwise('search');
