@@ -1,0 +1,15 @@
+
+<div class="row" style="color: navy">
+    <div class="panel panel-info" style="float: left; width: 58%; padding: 0px;">
+        <div class="panel-heading" style="font-size: 2em">Search Results for "{{ $ctrl.searchResult.keyword }}"</div>
+
+        <ul class="list-group">
+            <li class="list-group-item"> Floor number: {{ $ctrl.searchResult.floorNumber }}</li>
+            <li class="list-group-item"> Room number: {{ $ctrl.searchResult.roomNumber }}</li>
+            <li class="list-group-item"> Hours of operation: {{ $ctrl.startTime }} - {{ $ctrl.endTime }}</li>
+        </ul>
+
+        <center><img ng-src="{{ $ctrl.searchResult.floorImage.floorImage._url }}" style="width: 90%; padding: 10px;"></center>
+        
+    </div>
+</div>
