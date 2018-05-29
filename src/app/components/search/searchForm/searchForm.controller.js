@@ -1,4 +1,4 @@
-function SearchController(SearchService) {
+function SearchController(SearchService, $state) {
 
   var ctrl = this;
 
@@ -6,6 +6,11 @@ function SearchController(SearchService) {
     console.log(ctrl.searchInput)
     return SearchService
       .navParse(ctrl.searchInput)
+  };
+
+  ctrl.navResult = function() {
+    console.log("success!");
+    $state.go('searchResults');
   };
 
 }

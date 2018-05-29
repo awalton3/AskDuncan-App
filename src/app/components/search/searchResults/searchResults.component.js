@@ -13,5 +13,5 @@ angular
         url: '/results',
         component: 'searchResults'
       });
-   $urlRouterProvider.otherwise('search');
+  // $urlRouterProvider.otherwise('search');
   });
